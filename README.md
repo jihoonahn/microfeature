@@ -1,1 +1,1 @@
-# MicroFeature
+# µFeatures Architecture
