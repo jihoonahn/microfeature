@@ -1,8 +1,10 @@
-//
-//  Testing.swift
-//  microfeature
-//
-//  Created by Jihoonahn on 11/21/23.
-//
+import ProjectDescription
 
-import Foundation
+public final class Testing: TargetSpec {
+    public init(name: String) {
+        super.init()
+        self.targetModifier.name = name + "Testing"
+        self.targetModifier.product = .framework
+        self.targetModifier.sources = .testing
+    }
+}
