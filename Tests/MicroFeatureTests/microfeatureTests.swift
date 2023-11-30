@@ -1,5 +1,5 @@
 import XCTest
-@testable import microfeature
+@testable import MicroFeature
 
 final class MicroFeatureTests: XCTestCase {
     func testExample() {
