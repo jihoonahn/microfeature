@@ -1,6 +1,33 @@
 {
   "pins" : [
     {
+      "identity" : "plcommand",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pelagornis/plcommand",
+      "state" : {
+        "revision" : "9ea51bbec565dea45426a2c586fc3aa795a12149",
+        "version" : "1.2.2"
+      }
+    },
+    {
+      "identity" : "projectdescription",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tuist/projectdescription",
+      "state" : {
+        "revision" : "1d1e72f2cd90c841d10ee761ec6fd521651d56ba",
+        "version" : "3.28.0"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "8f4d2753f0e4778c76d5f05ad16c74f707390531",
+        "version" : "1.2.3"
+      }
+    },
+    {
       "identity" : "swift-docc-plugin",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-docc-plugin",
