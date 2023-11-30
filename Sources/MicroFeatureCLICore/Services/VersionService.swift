@@ -1,8 +1,11 @@
-//
-//  File.swift
-//  
-//
-//  Created by Jihoonahn on 12/1/23.
-//
-
 import Foundation
+
+/// A service that prints the version of the plugin.
+public final class VersionService {
+    public init() {}
+    
+    /// The entry point of the service.
+    public func run() {
+        print(Constants.version)
+    }
+}

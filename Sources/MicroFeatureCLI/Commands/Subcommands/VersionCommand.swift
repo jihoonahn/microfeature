@@ -1,8 +1,16 @@
-//
-//  File.swift
-//  
-//
-//  Created by Jihoonahn on 12/1/23.
-//
+import ArgumentParser
+import MicroFeatureCLICore
 
-import Foundation
+extension MainCommand {
+    /// A command to print the current version of the plugin.
+    struct VersionCommand: ParsableCommand {
+        static var configuration = CommandConfiguration(
+            commandName: "version",
+            abstract: "Outputs the current version of the plugin."
+        )
+        
+        func run() throws {
+            VersionService().run()
+        }
+    }
+}

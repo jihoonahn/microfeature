@@ -1,8 +1,7 @@
-//
-//  File.swift
-//  
-//
-//  Created by Jihoonahn on 12/1/23.
-//
-
 import Foundation
+
+/// A set of constant values that can be reused across `MicroFeaturePlugin` module.
+enum Constants {
+    /// The plugin version.
+    static let version = "0.1.0"
+}
