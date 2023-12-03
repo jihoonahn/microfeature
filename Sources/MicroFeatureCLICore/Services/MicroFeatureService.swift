@@ -11,6 +11,7 @@ public final class MicroFeatureService {
     public func run(path: String, name: String, type: [String]) throws {
         type.forEach {
             tuist.scaffold($0, ["--path", path, "--name", name])
+            print("\($0) - path: \(path) name: \(name)")
         }
     }
 }
