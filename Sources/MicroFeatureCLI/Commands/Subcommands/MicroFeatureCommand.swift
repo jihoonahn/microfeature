@@ -28,7 +28,10 @@ extension MainCommand {
         @Argument(help: "Enter the name of the project target you want to create.")
         var name: String
         
-        @Argument(help: "Please enter the MicroFeature types you want to add.")
+        @Option(
+            name: .shortAndLong,
+            help: "Please enter the MicroFeature types you want to add."
+        )
         var type: [MicroFeatureType] = [.sources]
 
         func run() throws {
