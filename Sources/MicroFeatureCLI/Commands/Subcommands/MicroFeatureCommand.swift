@@ -18,21 +18,18 @@ extension MainCommand {
             case uitests = "UITests"
         }
 
+        @Argument(help: "Enter the name of the project target you want to create.")
+        var name: String
+
+        @Argument(help: "Please enter the MicroFeature types you want to add.")
+        var type: [MicroFeatureType] = [.sources]
+
         @Option(
             name: .shortAndLong,
             help: "The path to the directory that contains the workspace or project.",
             completion: .directory
         )
         var path: String
-
-        @Argument(help: "Enter the name of the project target you want to create.")
-        var name: String
-        
-        @Option(
-            name: .shortAndLong,
-            help: "Please enter the MicroFeature types you want to add."
-        )
-        var type: [MicroFeatureType] = [.sources]
 
         func run() throws {
             try MicroFeatureService()
