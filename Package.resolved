@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pelagornis/plcommand",
       "state" : {
-        "revision" : "3d33a2e6e6c9f9ac263714690840d39b124a6812",
-        "version" : "1.2.3"
+        "revision" : "22e70a10fe7d35cca32c6c0c5eea32c28cade557",
+        "version" : "1.2.5"
       }
     },
     {
