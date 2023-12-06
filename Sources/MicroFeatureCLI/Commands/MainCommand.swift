@@ -6,9 +6,8 @@ struct MainCommand: ParsableCommand {
         commandName: "plugin-microfeature",
         abstract: "A plugin that extends Tuist with MicroFeature code.",
         subcommands: [
-            MicroFeatureCommand.self,
             VersionCommand.self
         ],
-        defaultSubcommand: MicroFeatureCommand.self
+        defaultSubcommand: VersionCommand.self
     )
 }
