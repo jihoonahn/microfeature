@@ -1,3 +1,3 @@
 import ProjectDescription
 
-let plugin = Plugin(name: "MicroFeature")
+let plugin = Plugin(name: "Microfeature")

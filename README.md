@@ -33,7 +33,7 @@ The documentation for releases and `main` are available here:
 Then import the `MicroFeature` from thr location you want to use.
 
 ```swift
-import MicroFeature
+import Microfeature
 ```
 
 ## Build µFeatures Architecture with Microfeature Plugin
