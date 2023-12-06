@@ -14,7 +14,6 @@ let package = Package(
         .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.3.0"),
         .package(url: "https://github.com/tuist/projectdescription", from: "3.28.0"),
         .package(url: "https://github.com/apple/swift-argument-parser", from: "1.2.3"),
-        .package(url: "https://github.com/pelagornis/plcommand", from: "1.2.5")
     ],
     targets: [
         .executableTarget(
@@ -24,12 +23,7 @@ let package = Package(
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
             ]
         ),
-        .target(
-            name: "MicroFeatureCLICore",
-            dependencies: [
-                .product(name: "Command", package: "plcommand")
-            ]
-        ),
+        .target(name: "MicroFeatureCLICore"),
         .target(
             name: "MicroFeature",
             dependencies: [
