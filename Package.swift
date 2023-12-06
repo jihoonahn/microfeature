@@ -7,7 +7,7 @@ let package = Package(
     products: [
         .executable(
             name: "tuist-microfeature",
-            targets: ["MicroFeatureCLI"]
+            targets: ["MicrofeatureCLI"]
         )
     ],
     dependencies: [
@@ -17,24 +17,24 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "MicroFeatureCLI",
+            name: "MicrofeatureCLI",
             dependencies: [
-                "MicroFeatureCLICore",
+                "MicrofeatureCLICore",
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
             ]
         ),
-        .target(name: "MicroFeatureCLICore"),
+        .target(name: "MicrofeatureCLICore"),
         .target(
-            name: "MicroFeature",
+            name: "Microfeature",
             dependencies: [
                 .product(name: "ProjectDescription", package: "ProjectDescription"),
             ],
             path: "ProjectDescriptionHelpers"
         ),
         .testTarget(
-            name: "MicroFeatureTests",
+            name: "MicrofeatureTests",
             dependencies: [
-                "MicroFeature"
+                "Microfeature"
             ],
             path: "Tests"
         ),
