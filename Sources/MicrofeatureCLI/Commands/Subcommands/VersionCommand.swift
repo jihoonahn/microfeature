@@ -1,5 +1,5 @@
 import ArgumentParser
-import MicroFeatureCLICore
+import MicrofeatureCLICore
 
 extension MainCommand {
     /// A command to print the current version of the plugin.
