@@ -23,6 +23,11 @@ let config = Config(
 )
 ```
 
+## Documentation
+The documentation for releases and `main` are available here:
+- [`main`](https://jihoonahn.github.io/microfeature/main/documentation/microfeature/)
+
+
 ## Using
 
 Then import the `MicroFeature` from thr location you want to use.
