@@ -11,9 +11,9 @@ import ProjectDescription
 /// How to use specified targets
 /// ```swift
 /// Microfeature {
-///    Example()
-///    Interface()
-///    Sources()
+///    Example(name: "")
+///    Interface(name: "")
+///    Sources(name: "")
 /// }
 /// ```
 public func Microfeature(@TargetBuilder content: () -> [Target]) -> [Target] {
