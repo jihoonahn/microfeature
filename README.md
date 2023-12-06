@@ -75,7 +75,7 @@ let project = Project(
 If you use it with `TuistUI` Plugin
 
 ```swift
-let project = BaseFeature().makeModule()
+let project = ExampleModule().makeModule()
 
 struct ExampleModule: Module {
     var body: some Module {
