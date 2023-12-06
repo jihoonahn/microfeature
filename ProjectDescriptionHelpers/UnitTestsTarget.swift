@@ -1,5 +1,6 @@
 import ProjectDescription
 
+/// TargetSpec for Using UnitTests Target
 public final class UnitTests: TargetSpec {
     public init(name: String) {
         super.init()

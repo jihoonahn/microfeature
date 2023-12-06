@@ -1,5 +1,6 @@
 import ProjectDescription
 
+/// TargetSpec for Using Sources Target
 public final class Sources: TargetSpec {
     public init(name: String, product: Product = .staticLibrary) {
         super.init()

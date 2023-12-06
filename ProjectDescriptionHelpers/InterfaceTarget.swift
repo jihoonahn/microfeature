@@ -1,5 +1,6 @@
 import ProjectDescription
 
+/// TargetSpec for Using Interface Target
 public final class Interface: TargetSpec {
     public init(name: String) {
         super.init()

@@ -1,5 +1,6 @@
 import ProjectDescription
 
+/// TargetSpec for Using Example Target
 public final class Example: TargetSpec {
     public init(name: String) {
         super.init()
@@ -8,4 +9,3 @@ public final class Example: TargetSpec {
         self.targetModifier.sources = .example
     }
 }
-
