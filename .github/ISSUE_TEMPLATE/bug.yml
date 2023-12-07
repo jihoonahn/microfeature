@@ -1,5 +1,5 @@
 name: Bug Report
-description: Found a bug in MicroFeature? Create a report!
+description: Found a bug in Microfeature? Create a report!
 title: "Insert title here"
 labels: ["type:bug"]
 body:
