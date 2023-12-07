@@ -1,12 +1,12 @@
 name: Problem or need
-description: Please report any problems or needs that you have encountered which MicroFeature currently does not address or inadequately solves
+description: Please report any problems or needs that you have encountered which Microfeature currently does not address or inadequately solves
 title: "Insert title here"
 labels: ["type:need/problem"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to help improve TuistUI!
+        Thanks for taking the time to help improve Microfeature!
   - type: textarea
     id: what-happened
     attributes:
