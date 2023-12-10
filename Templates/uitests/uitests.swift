@@ -4,7 +4,7 @@ private let pathAttribute = Template.Attribute.optional("path", default: "Projec
 private let nameAttribute = Template.Attribute.required("name")
 
 private let template = Template(
-    description: "uitests target template",
+    description: "UITests target template",
     attributes: [
         pathAttribute,
         nameAttribute
