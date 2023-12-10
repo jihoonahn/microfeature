@@ -104,12 +104,12 @@ $ tuist scaffold $(templateName) --path $(path) --name $(name)
 <details>
   <summary> Template Name </summary>
 
-- Example
-- Interface
-- Sources
-- Testing
-- Tests
-- UITests
+- example
+- interface
+- sources
+- testing
+- tests
+- uitests
 </details>
 
 ### Support later
