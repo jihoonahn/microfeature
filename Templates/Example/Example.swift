@@ -4,7 +4,7 @@ private let pathAttribute = Template.Attribute.optional("path", default: "Projec
 private let nameAttribute = Template.Attribute.required("name")
 
 private let template = Template(
-    description: "A template for a new example target",
+    description: "Example target template",
     attributes: [
         pathAttribute,
         nameAttribute
@@ -12,11 +12,11 @@ private let template = Template(
     items: [
         .file(
             path: "\(pathAttribute)/\(nameAttribute)/Example/Sources/AppDelegate.swift",
-            templatePath: "Example.stencil"
+            templatePath: "AppDelegate.stencil"
         ),
         .file(
             path: "\(pathAttribute)/\(nameAttribute)/Example/Resources/LaunchScreen.storyboard",
-            templatePath: "ExampleResources.stencil"
+            templatePath: "LaunchScreen.stencil"
         )
     ]
 )
