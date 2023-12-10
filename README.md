@@ -18,7 +18,7 @@ import ProjectDescription
 
 let config = Config(
     plugins: [
-        .git(url: "https://github.com/jihoonahn/microfeature.git", tag: "vTAG")
+        .git(url: "https://github.com/jihoonahn/microfeature", tag: "vTAG")
     ]
 )
 ```
