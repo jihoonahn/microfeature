@@ -1,4 +1,5 @@
 import ProjectDescription
+import TuistUI
 
 /// TargetSpec contains parts commonly used by targets.
 public class TargetSpec: TargetConvertable {

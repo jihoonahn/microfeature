@@ -1,5 +1,6 @@
 import ProjectDescription
- 
+import TuistUI
+
 /// Target Return Type for target Modifier
 public final class TargetModifier: TargetConvertable {
     /// The name of the target. Also, the product name if not specified with ``productName``.

@@ -1,4 +1,5 @@
 import ProjectDescription
+import TuistUI
 
 @resultBuilder
 public struct TargetBuilder {
