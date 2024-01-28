@@ -1,5 +1,4 @@
 import ProjectDescription
-import TuistUI
 
 /// TargetSpec contains parts commonly used by targets.
 public class TargetSpec: TargetConvertable {
@@ -13,10 +12,10 @@ public class TargetSpec: TargetConvertable {
 }
 
 public extension TargetSpec {
-    /// Setting Platform
+    /// Setting Destination
     @inlinable
-    func platform(_ platform: Platform) -> Self {
-        targetModifier.platform = platform
+    func destinations(_ destinations: Destinations) -> Self {
+        targetModifier.destinations = destinations
         return self
     }
     /// Setting ProductName
@@ -33,8 +32,8 @@ public extension TargetSpec {
     }
     /// Setting deploymentTarget
     @inlinable
-    func deploymentTarget(_ deploymentTarget: DeploymentTarget?) -> Self {
-        targetModifier.deploymentTarget = deploymentTarget
+    func deploymentTargets(_ deploymentTargets: DeploymentTargets?) -> Self {
+        targetModifier.deploymentTargets = deploymentTargets
         return self
     }
     /// Setting infoPlist

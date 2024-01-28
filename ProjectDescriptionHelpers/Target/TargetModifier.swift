@@ -1,13 +1,12 @@
 import ProjectDescription
-import TuistUI
 
 /// Target Return Type for target Modifier
 public final class TargetModifier: TargetConvertable {
     /// The name of the target. Also, the product name if not specified with ``productName``.
     public var name: String
 
-    /// The platform the target product is built for.
-    public var platform: Platform
+    /// The destinations this target supports, e.g. iPhone, appleVision, macCatalyst
+    public var destinations: Destinations
 
     /// The type of build product this target will output.
     public var product: Product
@@ -19,7 +18,7 @@ public final class TargetModifier: TargetConvertable {
     public var bundleId: String
 
     /// The minimum deployment target your product will support.
-    public var deploymentTarget: DeploymentTarget?
+    public var deploymentTargets: DeploymentTargets?
 
     /// The Info.plist representation.
     public var infoPlist: InfoPlist?
@@ -71,11 +70,11 @@ public final class TargetModifier: TargetConvertable {
     
     public init(
         name: String = "",
-        platform: Platform = .iOS,
+        destinations: Destinations = .iOS,
         product: Product = .staticLibrary,
         productName: String? = nil,
         bundleId: String = "",
-        deploymentTarget: DeploymentTarget? = nil,
+        deploymentTargets: DeploymentTargets? = nil,
         infoPlist: InfoPlist? = .default,
         sources: SourceFilesList? = nil,
         resources: ResourceFileElements? = nil,
@@ -94,7 +93,7 @@ public final class TargetModifier: TargetConvertable {
         mergeable: Bool = false
     ) {
         self.name = name
-        self.platform = platform
+        self.destinations = destinations
         self.bundleId = bundleId
         self.productName = productName
         self.product = product
@@ -110,7 +109,7 @@ public final class TargetModifier: TargetConvertable {
         self.coreDataModels = coreDataModels
         self.environmentVariables = environmentVariables
         self.launchArguments = launchArguments
-        self.deploymentTarget = deploymentTarget
+        self.deploymentTargets = deploymentTargets
         self.additionalFiles = additionalFiles
         self.buildRules = buildRules
         self.mergedBinaryType = mergedBinaryType
@@ -120,11 +119,11 @@ public final class TargetModifier: TargetConvertable {
     public func build() -> Target {
         Target(
             name: name,
-            platform: platform,
+            destinations: destinations,
             product: product,
             productName: productName,
             bundleId: bundleId,
-            deploymentTarget: deploymentTarget,
+            deploymentTargets: deploymentTargets,
             infoPlist: infoPlist,
             sources: sources,
             resources: resources,
