@@ -17,7 +17,7 @@ public final class TargetModifier: TargetConvertable {
     /// The product bundle identifier.
     public var bundleId: String
 
-    /// The minimum deployment target your product will support.
+    /// The minimum deployment targets your product will support.
     public var deploymentTargets: DeploymentTargets?
 
     /// The Info.plist representation.
