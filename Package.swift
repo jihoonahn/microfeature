@@ -13,7 +13,8 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.3.0"),
         .package(url: "https://github.com/tuist/projectdescription", from: "3.34.0"),
-        .package(url: "https://github.com/apple/swift-argument-parser", from: "1.2.3"),
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "1.3.0"),
+        .package(url: "https://github.com/jihoonahn/tuistui", from: "0.1.7")
     ],
     targets: [
         .executableTarget(
@@ -28,6 +29,7 @@ let package = Package(
             name: "Microfeature",
             dependencies: [
                 .product(name: "ProjectDescription", package: "ProjectDescription"),
+                .product(name: "TuistUI", package: "TuistUI")
             ],
             path: "ProjectDescriptionHelpers"
         ),
