@@ -35,15 +35,6 @@
         "revision" : "b45d1f2ed151d057b54504d653e0da5552844e34",
         "version" : "1.0.0"
       }
-    },
-    {
-      "identity" : "tuistui",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jihoonahn/tuistui",
-      "state" : {
-        "revision" : "d626fe68612b80dd7818d4ad5318bc93545c57f4",
-        "version" : "0.1.7"
-      }
     }
   ],
   "version" : 2
