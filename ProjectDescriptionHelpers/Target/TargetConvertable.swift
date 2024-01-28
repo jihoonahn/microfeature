@@ -1,8 +1,6 @@
-//
-//  File.swift
-//  
-//
-//  Created by Jihoonahn on 1/28/24.
-//
+import ProjectDescription
 
-import Foundation
+/// Target Convertable Protocol
+public protocol TargetConvertable {
+    func build() -> Target
+}
